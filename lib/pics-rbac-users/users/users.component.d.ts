@@ -54,11 +54,13 @@ export declare class UsersComponent implements OnInit {
     };
     getUserList(_key?: string): void;
     getRolesList(): void;
+    clearSearch(event: Event): void;
     getPolicyGroupList(_managementGroupId?: number): void;
     addUser(): void;
     userWithOutId(userData: any): void;
     userWithID(userData: any): void;
     mapUserToRole(userId: any, roleId: any): void;
+    onClickAddUser(): void;
     cancel(): void;
     searchUser(event: Event): void;
     getUserInfo(user: any): void;
@@ -70,6 +72,7 @@ export declare class UsersComponent implements OnInit {
     selectProvider(selected: any): void;
     addProviderUser(providerId: any, userid: any): void;
     handleFileInput(fileValue: any): void;
+    onClickRemoveProfile(): void;
     removeThumbnail(): void;
     validateImage(file: any): boolean;
     stopPropagation(event: Event): void;
